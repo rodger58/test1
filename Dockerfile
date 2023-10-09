@@ -1,5 +1,5 @@
 FROM openjdk
 WORKDIR /app
-COPY ./Calculator.java /app
+COPY ../ /app
 RUN javac Calculator.java
 CMD ["java","Calculator"]
